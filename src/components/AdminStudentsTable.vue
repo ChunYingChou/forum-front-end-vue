@@ -20,23 +20,6 @@
         <td>{{ student.email }}</td>
         <td>{{ student.birthday }}</td>
         <td>{{ student.cellphone }}</td>
-        <!-- <td class="d-flex justify-content-between">
-          <router-link
-            :to="{ name: 'admin-course', params: { id: course.id } }"
-            class="btn btn-link"
-            >Show</router-link
-          >
-          <router-link
-            :to="{ name: 'admin-course-edit', params: { id: course.id } }" class="btn btn-link">Edit</router-link>
-
-          <button
-            type="button"
-            class="btn btn-link"
-            @click.stop.prevent="deleteCourse(course.id)"
-          >
-            Delete
-          </button>
-        </td> -->
       </tr>
     </tbody>
   </table>
