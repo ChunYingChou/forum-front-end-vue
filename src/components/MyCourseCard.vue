@@ -8,9 +8,9 @@
       />
       <div class="card-body">
         <p class="card-text title-wrap">
-          <a href="#">
+          <router-link :to="{ name: 'course', params: { id: course.id } }">
             <strong>{{ course.language }} </strong>
-          </a>
+          </router-link>
         </p>
 
         <p class="card-text text-truncate">教師: {{ course.teacherName }}</p>
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { toGetTimeFilter } from './../utils/mixins'
+import { toGetTimeFilter } from "./../utils/mixins";
 
 export default {
   props: {
@@ -88,6 +88,6 @@ export default {
       (course.isChose = true), (course.students += 1);
     },
   },
-  mixins: [toGetTimeFilter]
+  mixins: [toGetTimeFilter],
 };
 </script>

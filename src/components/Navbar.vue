@@ -35,12 +35,12 @@
             >Hi~{{ currentUser.isAdmin ? "管理者" : "使用者" }} 您好
           </router-link>
           <router-link to="/signin">
-          <button
-            type="button"
-            class="btn btn-sm btn-outline-success me-2 my-sm-0"
-          >
-            登出
-          </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-success me-2 my-sm-0"
+            >
+              登出
+            </button>
           </router-link>
         </template>
       </div>

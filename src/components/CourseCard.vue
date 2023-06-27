@@ -8,9 +8,9 @@
       />
       <div class="card-body">
         <p class="card-text title-wrap">
-          <a href="#">
+          <router-link :to="{ name: 'course', params: { id: course.id } }">
             <strong>{{ course.language }} </strong>
-          </a>
+          </router-link>
         </p>
 
         <p class="card-text text-truncate">教師: {{ course.teacherName }}</p>
